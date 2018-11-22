@@ -4,18 +4,21 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "build": "$(yarn bin)/pulp build && $(yarn bin)/parcel index.html",
+    "build": "$(yarn bin)/pulp --watch build & $(yarn bin)/parcel index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "pulp": "^12.3.0",
-    "purescript": "^0.12.1",
+
     "react": "^16.6.3",
     "react-dom": "^16.6.3"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
     "parcel-bundler": "^1.10.3",
-    "react-hot-loader": "^4.3.12"
+    "react-hot-loader": "^4.3.12",
+    "purescript": "^0.12.1",
+    "purescript-psa": "^0.7.3",
+    "pscid": "^2.6.0",
+    "pulp": "^12.3.0"
   }
 }
